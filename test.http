@@ -1,0 +1,34 @@
+###GET Call 
+GET http://localhost:4004/marvel-enterprise/CaptainCool
+
+###Insert Call 
+POST http://localhost:4004/marvel-enterprise/CaptainCool
+Content-Type: application/json
+
+{
+	"id": "4",
+	"fullname": "varghese",
+	"doj": "2008-09-01",
+	"age": 40
+}
+
+###Update - PUT
+PUT http://localhost:4004/marvel-enterprise/CaptainCool('4')
+Content-Type: application/json
+
+{
+    "fullname": "Varghese Oommen",
+    "doj":"2002-08-02",
+    "age":40
+}
+
+###Update - PATCH
+PATCH http://localhost:4004/marvel-enterprise/CaptainCool('4')
+Content-Type: application/json
+
+{
+    "fullname": "Varghese Oommenn"
+}
+
+###DELETE 
+DELETE http://localhost:4004/marvel-enterprise/CaptainCool('4')
